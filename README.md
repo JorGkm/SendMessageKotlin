@@ -17,60 +17,25 @@ El objetivo del proyecto es ilustrar el mecanismo de comunicación entre activid
 
 ## Capturas de Pantalla
 
-> **[IA]** Las siguientes capturas deben tomarse en el emulador con la aplicación en ejecución.
-
 ### Pantalla 1 — SendMessageActivity (Escritura)
 
-```
-┌─────────────────────────────────────┐
-│  SendActivity                       │
-│                                     │
-│  ┌───────────────────────────────┐  │
-│  │ Escribe aquí el mensaje...    │  │
-│  │ ¡Hola, mundo!                 │  │
-│  │                               │  │
-│  └───────────────────────────────┘  │
-│                                     │
-│  ┌─────────┐                        │
-│  │ Enviar  │                        │
-│  └─────────┘                        │
-└─────────────────────────────────────┘
-```
-
-**[CAPTURA: Pantalla 1 — SendMessageActivity en el emulador]**
+![Pantalla 1 — SendMessageActivity](screenshot_sendmessage.png)
 
 ### Pantalla 2 — ViewMessageActivity (Visualización)
 
-```
-┌─────────────────────────────────────┐
-│                                     │
-│           ⚠️                        │
-│                                     │
-│  ┌───────────────────────────────┐  │
-│  │ ¡Hola, mundo!                 │  │
-│  │                               │  │
-│  └───────────────────────────────┘  │
-│                                     │
-└─────────────────────────────────────┘
-```
-
-**[CAPTURA: Pantalla 2 — ViewMessageActivity en el emulador]**
+![Pantalla 2 — ViewMessageActivity](screenshot_viewmessage.png)
 
 ---
 
 ## Evidencias de Depuración (Logcat)
 
-> **[IA]** La siguiente imagen debe mostrar la salida de Logcat durante la ejecución de la app.
-
-**[CAPTURA: Logcat mostrando el flujo del Intent y la recepción del mensaje]**
+![Logcat — com.example.sendmessage](screenshot_logcat.png)
 
 ---
 
 ## Conexión al Directorio /data/data/
 
-> **[IA]** La siguiente imagen debe mostrar el acceso al directorio de datos de la aplicación mediante el Device File Explorer de Android Studio o adb.
-
-**[CAPTURA: Device File Explorer mostrando /data/data/com.example.sendmessage]**
+![Device File Explorer — /data/data/com.example.sendmessage](screenshot_datadata.png)
 
 ---
 
