@@ -19,17 +19,17 @@ El objetivo del proyecto es ilustrar el mecanismo de comunicación entre activid
 
 ### Pantalla 1 — SendMessageActivity (Escritura)
 
-![Pantalla 1 — SendMessageActivity](screenshot_sendmessage.png)
+![Pantalla 1 — SendMessageActivity](documentation/images/screenshots/screenshot_01_send_message.png)
 
 ### Pantalla 2 — ViewMessageActivity (Visualización)
 
-![Pantalla 2 — ViewMessageActivity](screenshot_viewmessage.png)
+![Pantalla 2 — ViewMessageActivity](documentation/images/screenshots/screenshot_02_view_message.png)
 
 ---
 
 ## Evidencias de Depuración (Logcat)
 
-![Logcat — com.example.sendmessage](screenshot_logcat.png)
+![Logcat — com.example.sendmessage](documentation/images/screenshots/logcat_capture.png)
 
 ---
 
