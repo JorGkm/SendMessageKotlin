@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tvTItulo_textSize">30sp</dimen>
+    <dimen name="tvFMessageWidth">350dp</dimen>
+    <dimen name="tvFMessageHeight">350dp</dimen>
+    <dimen name="ivNoteWidth">200dp</dimen>
+    <dimen name="ivNoteHeight">200dp</dimen>
+    <dimen name="tvTitleHeight">50dp</dimen>
+    <dimen name="btSendMessage">175dp</dimen>
+</resources>

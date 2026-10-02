@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tvTitleHeight"
+        android:text="@string/tvTexto"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tvTItulo_textSize"
+        android:fontFamily="@font/stay_fun"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@color/purple_200"
+        />
+    <EditText
+        android:id="@+id/etMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:autofillHints="Text"
+        android:hint="@string/etContenido"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/etMensaje"
+        tools:ignore="LabelFor"
+        android:fontFamily="@font/playwrite_bewal_guides_regular"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btEnviarMensaje"
+        android:layout_width="@dimen/btSendMessage"
+        android:layout_height="wrap_content"
+        android:text="@string/btEnviarMensaje"
+        android:contentDescription="@string/btDescripción"/>
+</LinearLayout>

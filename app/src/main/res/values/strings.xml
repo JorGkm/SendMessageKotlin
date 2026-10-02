@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SendMessage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="etMensaje">Mensaje</string>
+    <string name="btEnviarMensaje">Enviar</string>
+    <string name="tvTexto">SendActivity</string>
+
+    <string name="etContenido">Escribe aquí el mensaje que se mostrará en la siguiente pantalla</string>
+    <string name="ivDescription">Icono de advertencia, tienes una nota</string>
+    <string name="tvFMessage">Contiene todo el mensaje final recibido por la primera activity</string>
+    <string name="btDescripción">El botón que usamos para enviar el mensaje con todo la información</string>
+    <string name="tvCita">Cita</string>
+
+</resources>
