@@ -66,7 +66,7 @@ class ViewMessageActivity : AppCompatActivity() {
         */
         val tvFinalMessage = findViewById<TextView>(R.id.tvFinalMessage)
         val bundle = this.intent.extras
-        val mensaje = bundle?.getSerializable("KEY_MESSAGE", Message::class.java)
+        val mensaje = bundle?.getParcelable("KEY_MESSAGE", Message::class.java)
         val emisor = mensaje?.sender
         val receptor = mensaje?.receiver
         val contenido = mensaje?.content

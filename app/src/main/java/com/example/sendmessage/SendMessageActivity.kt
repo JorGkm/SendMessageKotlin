@@ -3,7 +3,6 @@ package com.example.sendmessage
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sendmessage.model.Message
@@ -19,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
  * </ol>
  *
  * @author Jorge Merchán García
- * @version
+ * @version 1.0.0
  * @see android.widget.Button
  * @see android.widget.EditText
  * @see android.os.Bundle
@@ -66,8 +65,8 @@ lateinit var btSend: FloatingActionButton
         // [IA] Se obtienen los objetos de la view que se ha inflado
         //val etMensaje = findViewById<EditText>(R.id.etMensaje)
         //val btEnviar = findViewById<Button>(R.id.btEnviarMensaje)
-        etMessageText = findViewById<EditText>(R.id.etMensaje)
-        btSend = findViewById<FloatingActionButton>(R.id.btEnviarMensaje)
+        etMessageText = findViewById(R.id.etMensaje)
+        btSend = findViewById(R.id.btEnviarMensaje)
         // [IA] Listener que se ejecuta al pulsar el botón "Enviar"
         /*
         btEnviar.setOnClickListener {
@@ -89,7 +88,7 @@ lateinit var btSend: FloatingActionButton
         }*/
         //Se escriben mensajes de depuración en la consola LogCat
         Log.d(TAG, "SendMessageActivity => onCreate()")
-        sendMessage()
+        btSend.setOnClickListener { sendMessage() }
     }
 
     /**
@@ -107,7 +106,7 @@ lateinit var btSend: FloatingActionButton
         //4º Creamos el mensaje
         val message = Message(1,etMessageText.text.toString(), p1, p2)
         //5º Añadimos al Bundle el mensaje
-        bundle.putSerializable("KEY_MESSAGE", message)
+        bundle.putParcelable("KEY_MESSAGE", message)
         //6º Añadimos el bundle al intent
         intent.putExtras(bundle)
         //7º Iniciamos la ViewActivity con el intent

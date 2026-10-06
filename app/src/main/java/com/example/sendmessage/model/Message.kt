@@ -1,6 +1,10 @@
 package com.example.sendmessage.model
 
-import java.io.Serializable
 
 
-data class Message(val id : Int, val content : String, val sender : Person, val receiver : Person) : Serializable
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+
+@Parcelize
+data class Message(val id : Int, val content : String, val sender : Person, val receiver : Person) : Parcelable

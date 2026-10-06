@@ -35,7 +35,7 @@ El objetivo del proyecto es ilustrar el mecanismo de comunicación entre activid
 
 ## Conexión al Directorio /data/data/
 
-![Device File Explorer — /data/data/com.example.sendmessage](screenshot_datadata.png)
+![Device File Explorer — /data/data/com.example.sendmessage](documentation/images/screenshots/device_file_explorer.png)
 
 ---
 
