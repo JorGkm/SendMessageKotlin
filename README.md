@@ -1,17 +1,18 @@
-# SendMessage
+# SendMessage — Android Kotlin Intent & Bundle Demo App
 
-> **[IA]** Aplicación Android de ejemplo que demuestra cómo enviar un mensaje de texto entre dos actividades utilizando `Intent` y `Bundle`.
+> **[IA]** Aplicación Android de ejemplo desarrollada en **Kotlin** que demuestra cómo enviar un mensaje de texto entre dos actividades utilizando `Intent` y `Bundle`. Proyecto educativo para aprender los fundamentos de la comunicación entre componentes en **Android development**.
 
 ---
 
-## Descripción
+## Características
 
-**SendMessage** es una app Android sencilla compuesta por dos pantallas:
-
-1. **SendMessageActivity** — El usuario escribe un mensaje en un campo de texto y pulsa el botón "Enviar".
-2. **ViewMessageActivity** — Recibe y muestra el mensaje enviado desde la primera pantalla.
-
-El objetivo del proyecto es ilustrar el mecanismo de comunicación entre actividades en Android mediante `Intent` explícitos y `Bundle`.
+- ✅ **Dos actividades** con navegación mediante `Intent` explícito
+- ✅ **Transferencia de datos** con `Bundle` (clave-valor)
+- ✅ **Interfaz sencilla** con `EditText`, `Button` y `TextView`
+- ✅ **Soporte edge-to-edge** en la segunda actividad
+- ✅ **Fuentes personalizadas** y estilos visuales coherentes
+- ✅ **Tests unitarios** y **tests instrumentados** de ejemplo
+- ✅ **Documentación KDoc** en todas las clases y métodos
 
 ---
 
@@ -19,27 +20,52 @@ El objetivo del proyecto es ilustrar el mecanismo de comunicación entre activid
 
 ### Pantalla 1 — SendMessageActivity (Escritura)
 
-![Pantalla 1 — SendMessageActivity](documentation/images/screenshots/screenshot_01_send_message.png)
+![Pantalla 1 — SendMessageActivity](screenshot_sendmessage.png)
 
 ### Pantalla 2 — ViewMessageActivity (Visualización)
 
-![Pantalla 2 — ViewMessageActivity](documentation/images/screenshots/screenshot_02_view_message.png)
+![Pantalla 2 — ViewMessageActivity](screenshot_viewmessage.png)
 
 ---
 
 ## Evidencias de Depuración (Logcat)
 
-![Logcat — com.example.sendmessage](documentation/images/screenshots/logcat_capture.png)
+![Logcat — com.example.sendmessage](screenshot_logcat.png)
 
 ---
 
 ## Conexión al Directorio /data/data/
 
-![Device File Explorer — /data/data/com.example.sendmessage](documentation/images/screenshots/device_file_explorer.png)
+![Device File Explorer — /data/data/com.example.sendmessage](screenshot_datadata.png)
 
 ---
 
-## Estructura del Proyecto
+## Arquitectura y Stack Tecnológico
+
+### Patrón de Arquitectura
+
+La aplicación sigue un **patrón de navegación basado en actividades** (Activity-based navigation), que es el enfoque clásico de Android para la comunicación entre pantallas.
+
+```
+┌─────────────────────┐         Intent + Bundle         ┌─────────────────────┐
+│  SendMessageActivity │  ───────────────────────────►  │ ViewMessageActivity │
+│  (Pantalla origen)   │                                 │  (Pantalla destino)  │
+└─────────────────────┘                                 └─────────────────────┘
+```
+
+### Stack Tecnológico
+
+| Capa | Tecnología | Descripción |
+|---|---|---|
+| **Lenguaje** | Kotlin | Lenguaje principal de desarrollo Android |
+| **UI** | XML Layouts | Diseño de interfaces con LinearLayout y ConstraintLayout |
+| **Componentes UI** | Material Design | Componentes visuales de Android |
+| **Navegación** | Intent | Comunicación entre actividades |
+| **Transferencia de datos** | Bundle | Contenedor clave-valor para adjuntar datos al Intent |
+| **Build System** | Gradle (KTS) | Sistema de compilación con Kotlin DSL |
+| **Testing** | JUnit + Espresso | Tests unitarios y tests instrumentados |
+
+### Estructura del Proyecto
 
 ```
 SendMessage/
@@ -73,8 +99,8 @@ SendMessage/
 ├── gradle.properties
 ├── gradlew
 ├── FLUJO_DEL_MENSAJE.md    ← Documentación del flujo del mensaje
-├── README.MD               ← Este archivo
-├── CHANGELOG.MD            ← Historial de cambios
+├── README.md               ← Este archivo
+├── CHANGELOG.md            ← Historial de cambios
 └── MANUAL_USUARIO.md       ← Manual de usuario en lenguaje sencillo
 ```
 
@@ -132,7 +158,9 @@ tvFinalMessage.text = mensaje
 
 ---
 
-## Requisitos
+## Comenzando
+
+### Requisitos Previos
 
 | Requisito | Versión |
 |---|---|
@@ -143,15 +171,13 @@ tvFinalMessage.text = mensaje
 | **compileSdk** | 37 |
 | **Lenguaje** | Kotlin |
 
----
+### Instalación y Ejecución
 
-## Instalación
-
-1. Clona o descarga el repositorio.
-2. Abre el proyecto en **Android Studio**.
-3. Espera a que Gradle sincronice las dependencias.
-4. Conecta un dispositivo Android o inicia un emulador.
-5. Pulsa **Run** (▶️) para compilar y ejecutar la app.
+1. **Clona o descarga** el repositorio en tu máquina local.
+2. **Abre el proyecto** en **Android Studio**.
+3. **Espera** a que Gradle sincronice las dependencias automáticamente.
+4. **Conecta un dispositivo Android** o **inicia un emulador** (recomendado: Pixel 5).
+5. **Pulsa Run** (▶️) para compilar y ejecutar la app en el dispositivo/emulador.
 
 ---
 
@@ -159,14 +185,14 @@ tvFinalMessage.text = mensaje
 
 | Dependencia | Uso |
 |---|---|
-| `androidx.appcompat:appcompat` | Actividades compatibles |
+| `androidx.appcompat:appcompat` | Actividades compatibles con versiones anteriores |
 | `androidx.core:core-ktx` | Extensiones de Kotlin para Android |
-| `androidx.activity:activity-ktx` | Componentes de actividad |
-| `androidx.constraintlayout:constraintlayout` | Layouts con restricciones |
+| `androidx.activity:activity-ktx` | Componentes de actividad con soporte a corrutinas |
+| `androidx.constraintlayout:constraintlayout` | Layouts con restricciones para UI responsive |
 | `com.google.android.material:material` | Componentes Material Design |
-| `junit:junit` | Tests unitarios |
-| `androidx.test.ext:junit` | Tests instrumentados |
-| `androidx.test.espresso:espresso-core` | Tests de UI |
+| `junit:junit` | Framework de tests unitarios |
+| `androidx.test.ext:junit` | Extensión de JUnit para tests instrumentados |
+| `androidx.test.espresso:espresso-core` | Framework de tests de UI |
 
 ---
 
@@ -196,7 +222,7 @@ Este proyecto es de código abierto y se distribuye con fines educativos.
 
 ## Autor
 
-Desarrollado como proyecto educativo para aprender el flujo de `Intent` y `Bundle` en Android.
+Desarrollado como proyecto educativo para aprender el flujo de `Intent` y `Bundle` en Android con Kotlin.
 
 ---
 
