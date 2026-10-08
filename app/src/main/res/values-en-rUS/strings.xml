@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SendMessage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="etMensaje">Message</string>
+    <string name="btEnviarMensaje">Send</string>
+    <string name="tvTexto">SendActivity</string>
+
+    <string name="etContenido">Write here the message will be show in the next screen</string>
+    <string name="ivDescription">Alert icon, you have a note</string>
+    <string name="tvFMessage">Keep all the final message sended for the first screen</string>
+    <string name="btDescripción">The button which we use to send all the information</string>
+    <string name="tvCita">Cite</string>
+
+</resources>

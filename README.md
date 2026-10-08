@@ -20,23 +20,23 @@
 
 ### Pantalla 1 — SendMessageActivity (Escritura)
 
-![Pantalla 1 — SendMessageActivity](screenshot_sendmessage.png)
+![Pantalla 1 — SendMessageActivity](documentation/images/screenshots/screenshot_sendmessage.png)
 
 ### Pantalla 2 — ViewMessageActivity (Visualización)
 
-![Pantalla 2 — ViewMessageActivity](screenshot_viewmessage.png)
+![Pantalla 2 — ViewMessageActivity](documentation/images/screenshots/screenshot_viewmessage.png)
 
 ---
 
 ## Evidencias de Depuración (Logcat)
 
-![Logcat — com.example.sendmessage](screenshot_logcat.png)
+![Logcat — com.example.sendmessage](documentation/images/screenshots/screenshot_logcat.png)
 
 ---
 
 ## Conexión al Directorio /data/data/
 
-![Device File Explorer — /data/data/com.example.sendmessage](screenshot_datadata.png)
+![Device File Explorer — /data/data/com.example.sendmessage](documentation/images/screenshots/screenshot_datadata.png)
 
 ---
 
